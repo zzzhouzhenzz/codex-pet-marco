@@ -55,6 +55,6 @@ This GitHub repository is the canonical package source. Marco has not been uploa
 
 ## Attribution
 
-Marco is a cream-coat recolor of [Frankie](https://codex-pets.net/pets/frankie), originally published by **Arty** on `codex-pets.net`. The animation poses, character design, and line art come from Frankie; this repository changes the coat color and package identity.
+Marco is a cream-coat recolor of [Frankie](https://codex-pets.net/#/pets/frankie), originally published by **Arty** on `codex-pets.net`. The animation poses, character design, and line art come from Frankie; this repository changes the coat color and package identity.
 
 The upstream listing exposes no license. This repository therefore adds no license or claim of additional rights.

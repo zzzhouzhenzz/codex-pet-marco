@@ -20,5 +20,11 @@ class PackageTests(unittest.TestCase):
         )
 
 
+class ReadmeTests(unittest.TestCase):
+    def test_attribution_uses_pet_share_hash_route(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("https://codex-pets.net/#/pets/frankie", readme)
+
+
 if __name__ == "__main__":
     unittest.main()
