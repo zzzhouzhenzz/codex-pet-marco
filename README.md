@@ -55,4 +55,4 @@ This GitHub repository is the canonical package source. Marco has not been uploa
 
 ## Artwork
 
-Marco v2 is built from original character art created for this project from a cream French bulldog photo reference. It does not use Frankie artwork, poses, line art, or sprites.
+Marco v2 is built from original character art created for this project from a cream French bulldog photo reference. Every pose, line, and animation frame belongs to the current Marco v2 production.

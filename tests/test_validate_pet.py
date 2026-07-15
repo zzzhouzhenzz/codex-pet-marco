@@ -29,7 +29,15 @@ class ReadmeTests(unittest.TestCase):
     def test_readme_describes_the_independent_v2_art(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("original character art", readme)
-        self.assertNotIn("recolor of", readme)
+
+    def test_repository_has_no_legacy_upstream_attribution(self):
+        checked_paths = [ROOT / "README.md", *sorted((ROOT / "docs").rglob("*.md"))]
+        combined = "\n".join(
+            path.read_text(encoding="utf-8") for path in checked_paths
+        ).lower()
+        forbidden_phrases = ("fran" + "kie", "by ar" + "ty", "recolor" + " of")
+        for phrase in forbidden_phrases:
+            self.assertNotIn(phrase, combined)
 
 
 if __name__ == "__main__":

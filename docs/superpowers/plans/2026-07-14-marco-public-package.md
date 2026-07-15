@@ -12,9 +12,9 @@
 
 - Repository: public `zzzhouzhenzz/codex-pet-marco`, default branch `main`.
 - Pet identity: ID `marco`, display name `Marco`, kind `animal`.
-- Spritesheet: WebP, 1536 x 1872, alpha-capable.
-- Attribution: credit Frankie by Arty and link to the upstream listing.
-- Licensing: add no license because the upstream package exposes none.
+- Spritesheet: WebP, 1536 x 2288, alpha-capable, with `spriteVersionNumber: 2`.
+- Artwork: original Marco v2 character art created from the cream French bulldog photo reference.
+- Licensing: add no license unless the repository owner explicitly chooses one.
 - Do not claim `npx codex-pets add marco` support.
 
 ---
@@ -51,7 +51,7 @@ class PackageTests(unittest.TestCase):
     def test_spritesheet_dimensions_and_alpha(self):
         self.assertEqual(
             read_webp_info(ROOT / "pet" / "spritesheet.webp"),
-            (1536, 1872, True),
+            (1536, 2288, True),
         )
 ```
 
@@ -72,7 +72,7 @@ Expected: FAIL because `validate_pet` does not exist.
 }
 ```
 
-Copy `/Users/zhouzhen24/.codex/pets/frankie/spritesheet.webp` to `pet/spritesheet.webp` without modifying bytes.
+Copy the approved cool-cream Marco v2 atlas to `pet/spritesheet.webp` without modifying bytes.
 
 - [ ] **Step 4: Implement dependency-free manifest and WebP validation**
 
@@ -121,7 +121,7 @@ https://raw.githubusercontent.com/zzzhouzhenzz/codex-pet-marco/main
 
 - [ ] **Step 4: Write README**
 
-Include a visible Marco preview, the one-command installer, manual installation, validation command, refresh/restart guidance, checksum caveat, the separation from `codex-pets.net`, and attribution to Frankie by Arty. Do not add a license badge or license claim.
+Include a visible Marco preview, the one-command installer, manual installation, validation command, refresh/restart guidance, checksum caveat, the separation from `codex-pets.net`, and the original-art provenance. Do not add a license badge or license claim.
 
 - [ ] **Step 5: Verify shell syntax and all tests**
 
