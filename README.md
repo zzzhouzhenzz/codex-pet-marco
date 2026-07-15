@@ -1,6 +1,6 @@
 # Marco — Codex Pet
 
-Marco is a classic cream French bulldog companion for the Codex desktop app and compatible Codex CLI terminals.
+Marco v2 is a cool ivory-cream French bulldog companion for the Codex desktop app and compatible Codex CLI terminals. It uses a bold cel-shaded, GTA-inspired cartoon style with the complete Codex v2 animation set.
 
 <img src="pet/spritesheet.webp" alt="Marco cream French bulldog animation spritesheet" width="520">
 
@@ -47,14 +47,12 @@ python3 scripts/validate_pet.py
 python3 -m unittest discover -s tests -v
 ```
 
-It checks the Marco manifest, WebP container, `1536 x 1872` dimensions, and alpha support.
+It checks the Marco v2 manifest, WebP container, `1536 x 2288` dimensions, and alpha support.
 
 ## `codex-pets` registry status
 
 This GitHub repository is the canonical package source. Marco has not been uploaded to the separate `codex-pets.net` service, so `npx codex-pets add marco` is not currently supported.
 
-## Attribution
+## Artwork
 
-Marco is a cream-coat recolor of [Frankie](https://codex-pets.net/#/pets/frankie), originally published by **Arty** on `codex-pets.net`. The animation poses, character design, and line art come from Frankie; this repository changes the coat color and package identity.
-
-The upstream listing exposes no license. This repository therefore adds no license or claim of additional rights.
+Marco v2 is built from original character art created for this project from a cream French bulldog photo reference. It does not use Frankie artwork, poses, line art, or sprites.

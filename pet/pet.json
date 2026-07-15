@@ -1,7 +1,8 @@
 {
   "id": "marco",
   "displayName": "Marco",
-  "description": "A cute smiling classic cream French bulldog digital pet.",
+  "description": "A cool ivory-cream French bulldog in a bold cel-shaded, open-world-game cartoon style.",
+  "spriteVersionNumber": 2,
   "spritesheetPath": "spritesheet.webp",
   "kind": "animal"
 }

@@ -11,10 +11,11 @@ import sys
 EXPECTED_MANIFEST = {
     "id": "marco",
     "displayName": "Marco",
+    "spriteVersionNumber": 2,
     "spritesheetPath": "spritesheet.webp",
     "kind": "animal",
 }
-EXPECTED_SIZE = (1536, 1872)
+EXPECTED_SIZE = (1536, 2288)
 
 
 def read_webp_info(path: Path) -> tuple[int, int, bool]:

@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import sys
 import unittest
 
@@ -16,14 +17,19 @@ class PackageTests(unittest.TestCase):
     def test_spritesheet_dimensions_and_alpha(self):
         self.assertEqual(
             read_webp_info(ROOT / "pet" / "spritesheet.webp"),
-            (1536, 1872, True),
+            (1536, 2288, True),
         )
+
+    def test_manifest_declares_sprite_version_2(self):
+        manifest = json.loads((ROOT / "pet" / "pet.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["spriteVersionNumber"], 2)
 
 
 class ReadmeTests(unittest.TestCase):
-    def test_attribution_uses_pet_share_hash_route(self):
+    def test_readme_describes_the_independent_v2_art(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("https://codex-pets.net/#/pets/frankie", readme)
+        self.assertIn("original character art", readme)
+        self.assertNotIn("recolor of", readme)
 
 
 if __name__ == "__main__":
